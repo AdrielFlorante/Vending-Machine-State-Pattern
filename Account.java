@@ -16,23 +16,23 @@ public class Account {
     }
 
     public void activate() {
-        state.activate(this);
+        state.activate();
     }
 
     public void suspend() {
-        state.suspend(this);
+        state.suspend();
     }
 
     public void close() {
-        state.close(this);
+        state.close();
     }
 
     public void deposit(double amount) {
-        state.deposit(this, amount);
+        state.deposit(amount);
     }
 
     public void withdraw(double amount) {
-        state.withdraw(this,amount);
+        state.withdraw(amount);
     }
 
     public void setState(AccountState state) {
@@ -44,7 +44,7 @@ public class Account {
     }
 
     public double getBalance() {
-        return balance;
+        return this.balance;
     }
 
     public void setAccountNumber(String accountNumber) {
