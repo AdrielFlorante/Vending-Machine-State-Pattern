@@ -20,12 +20,12 @@ public class ActiveState implements AccountState {
     }
 
     public void suspend() {
-        account.setState(new SuspendedState());
+        account.setState(new SuspendedState(account));
         System.out.println("Account is suspended!");
     }
 
     public void close() {
-        account.setState(new ClosedState());
+        account.setState(new ClosedState(account));
         System.out.println("Account is closed!");
     }
 }

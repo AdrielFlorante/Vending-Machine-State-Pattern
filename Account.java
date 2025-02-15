@@ -8,7 +8,7 @@ public class Account {
     public Account(String accountNumber, double balance) {
         this.accountNumber = accountNumber;
         this.balance = balance;
-        this.state = new ActiveState();
+        this.state = new ActiveState(this);
     }
     
     public String toString() {
