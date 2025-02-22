@@ -1,15 +1,18 @@
 public class Idle implements VendingMachineState {
     private VendingMachine vendingMachine;
 
+    public Idle(VendingMachine vendingMachine) {
+        this.vendingMachine = vendingMachine;
+    }
+
     @Override
     public void dispenseItem() {
-        System.out.println("Dispensing an item here!");
-        // Call the selected itemName from selectItem?
+        System.out.println("You cannot dispense an item without selecting one first!");
     }
 
     @Override
     public void insertCoin() {
-        System.out.println("Coin has been inserted!");
+        System.out.println("You cannot insert a coin yet!");
     }
 
     @Override
