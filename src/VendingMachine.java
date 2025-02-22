@@ -16,4 +16,12 @@ public class VendingMachine {
     public void setBalance(double balance) {
         this.balance = balance;
     }
+
+    public String getItemSelected() {
+        return itemSelected;
+    }
+
+    public void setItemSelected(String itemSelected) {
+        this.itemSelected = itemSelected;
+    }
 }

@@ -7,7 +7,8 @@ public class ItemSelected implements VendingMachineState {
 
     @Override
     public void dispenseItem() {
-
+        System.out.println(vendingMachine.getItemSelected() + " was dispensed!");
+        vendingMachine.setState(new Idle(vendingMachine));
     }
 
     @Override
@@ -17,11 +18,11 @@ public class ItemSelected implements VendingMachineState {
 
     @Override
     public void selectItem(String itemName) {
-        System.out.println("You've already selected an item!");
+        System.out.println("Cannot select now, you've already selected an item!");
     }
 
     @Override
     public void setOutOfOrder() {
-
+        System.out.println("You cannot set Vending Machine out of order now!");
     }
 }
