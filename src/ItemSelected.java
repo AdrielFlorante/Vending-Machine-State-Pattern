@@ -1,5 +1,5 @@
 public class ItemSelected implements VendingMachineState {
-    private VendingMachine vendingMachine = new VendingMachine();
+    private VendingMachine vendingMachine;
 
     public ItemSelected(VendingMachine vendingMachine) {
         this.vendingMachine = vendingMachine;

@@ -1,5 +1,5 @@
 public class OutOfOrder implements VendingMachineState {
-    private VendingMachine vendingMachine = new VendingMachine();
+    private VendingMachine vendingMachine;
 
     public OutOfOrder(VendingMachine vendingMachine) {
         this.vendingMachine = vendingMachine;

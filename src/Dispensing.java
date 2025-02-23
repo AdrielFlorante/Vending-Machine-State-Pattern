@@ -1,5 +1,5 @@
 public class Dispensing implements VendingMachineState {
-    VendingMachine vendingMachine = new VendingMachine();
+    private VendingMachine vendingMachine;
 
     public Dispensing(VendingMachine vendingMachine) {
         this.vendingMachine = vendingMachine;

@@ -25,6 +25,7 @@ public class Idle implements VendingMachineState {
 
     @Override
     public void setOutOfOrder() {
+        vendingMachine.setState(new OutOfOrder(vendingMachine));
         System.out.println("Vending Machine is out of order now!");
     }
 }
