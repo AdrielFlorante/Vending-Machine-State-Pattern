@@ -3,7 +3,7 @@ public class VendingMachine {
 
     // implement ItemInventory?
     private double balance;
-    private String itemSelected;
+    private String itemInventory;
 
     public void setState(VendingMachineState state) { // to set the state
         this.state = state;
@@ -17,11 +17,11 @@ public class VendingMachine {
         this.balance = balance;
     }
 
-    public String getItemSelected() {
-        return itemSelected;
+    public String getItemInventory() {
+        return itemInventory;
     }
 
-    public void setItemSelected(String itemSelected) {
-        this.itemSelected = itemSelected;
+    public void setItemInventory(String itemInventory) {
+        this.itemInventory = itemInventory;
     }
 }

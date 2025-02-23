@@ -18,7 +18,7 @@ public class Idle implements VendingMachineState {
     @Override
     public void selectItem(String itemName) {
         // I think there should be something more here
-        vendingMachine.setItemSelected(itemName);
+        vendingMachine.setItemInventory(itemName);
         System.out.println(itemName + " has been selected!");
         vendingMachine.setState(new ItemSelected(vendingMachine));
     }
