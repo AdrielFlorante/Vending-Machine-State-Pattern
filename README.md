@@ -43,4 +43,4 @@ Each concrete state class implements the `VendingMachineState` interface, provid
 - Delegate actions like `selectItem`, `insertCoin`, `dispenseItem`, and `setOutOfOrder` to the current state object through its corresponding methods.
 
 ## UML Diagram:
-![State Pattern UML Diagram](State Pattern UML Diagram.png)
+![State Pattern UML Diagram](https://github.com/AdrielFlorante/Vending-Machine-State-Pattern/blob/main/State%20Pattern%20UML%20Diagram.png)
