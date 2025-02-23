@@ -13,6 +13,7 @@ public class ItemSelected implements VendingMachineState {
 
     @Override
     public void insertCoin() {
+        vendingMachine.setBalance(vendingMachine.getBalance() + '1'); // Let's just say every item is worth 1 each for now
         System.out.println("Coin has been inserted!");
     }
 
