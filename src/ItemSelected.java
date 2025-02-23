@@ -19,7 +19,7 @@ public class ItemSelected implements VendingMachineState {
 
     @Override
     public void selectItem(String itemName) {
-        System.out.println("You have already selected an item!");
+        System.out.println("You have already selected an item! Therefore you get no " + itemName + "!");
     }
 
     public void setOutOfOrder() {
