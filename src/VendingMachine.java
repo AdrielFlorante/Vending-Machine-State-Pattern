@@ -5,6 +5,10 @@ public class VendingMachine {
     private double balance;
     private String itemInventory;
 
+    public VendingMachine() {
+        this.state = new Idle(this); // Forgot this part oops
+    }
+
     public void setState(VendingMachineState state) { // to set the state
         this.state = state;
     }
@@ -23,5 +27,21 @@ public class VendingMachine {
 
     public void setItemInventory(String itemInventory) {
         this.itemInventory = itemInventory;
+    }
+
+    public void selectItem(String itemInventory) {
+        state.selectItem(itemInventory);
+    }
+
+    public void insertCoin() {
+        state.insertCoin();
+    }
+
+    public void setOutOfOrder() {
+        state.setOutOfOrder();
+    }
+
+    public void dispenseItem() {
+        state.dispenseItem();
     }
 }
